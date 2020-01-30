@@ -72,7 +72,7 @@ class SimulatedAnnealing:
 
         self.weight_list = [self.curr_weight]
 
-        print('Intial weight: ', self.curr_weight)
+        print('Initial weight: ', self.curr_weight)
 
     def weight(self, sol):
         """

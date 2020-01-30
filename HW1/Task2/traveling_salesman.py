@@ -10,7 +10,6 @@ def main():
     stopping_iter = 10000000
 
     nodes = coord
-    print(nodes)
     sa = SimulatedAnnealing(nodes, temp, alpha, stopping_temp, stopping_iter)
     sa.anneal()
 

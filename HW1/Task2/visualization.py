@@ -23,7 +23,6 @@ def animate_problem(history, points):
         plt.plot(x, y, 'co', label='oi')
 
         for i in range(len(x)):
-            print(str(res_cities.loc[(res_cities['geo_lat'] == x[i]) & (res_cities['geo_lon'] == y[i])]['city'].values[0]))
             ax.annotate(str(res_cities.loc[(res_cities['geo_lat'] == x[i]) & (res_cities['geo_lon'] == y[i])]['city'].values[0]), (x[i], y[i]))
 
         extra_x = (max(x) - min(x)) * 0.05
